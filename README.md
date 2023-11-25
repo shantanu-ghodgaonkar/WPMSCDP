@@ -1,4 +1,4 @@
 
 <h1>Wearable Physiological Monitoring System for COVID-19 USING ClusterDuck Protocol</h1>
 <div>This system creates an ad-hoc network in a locality which creates a network between the patient and the doctor. As soon as a patient requests to consult a doctor, an ad-hoc network is created by CDP and a doctor available in that network will respond immediately. Any doctor available in the network could examine the patient remotely. As the patients will be remotely examined, the possibility of the medical professionals contracting the virus reduces. As the patients can stay in home quarantine, they will save a lot of money in hospital bills.</div>
-<a href="https://github.com/shantanu-ghodgaonkar/WPMSCDP/blob/54ef00f889a9efa1efb7d43b9861c77ba2ac260c/Wearable%20Physiological%20Monitoring%20System%20using%20CDP_Project%20Report_1BI17EI021_26_33_38.pdf">Click here</a> for the full report
+<a href="https://github.com/shantanu-ghodgaonkar/WPMSCDP/blob/90bf9fb0a9dda9269c1eb58d4fd06a342197eb05/Wearable%20Physiological%20Monitoring%20System%20using%20CDP_Project%20Report_1BI17EI021_26_33_38.pdf">Click here</a> for the full report
