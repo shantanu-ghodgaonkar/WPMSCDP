@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>CDP Test 1</title>
+		<style>
+			#bit-symbol {
+				width: 4%;
+			}
+			
+			#vtu-symbol {
+				/*position: absolute;*/
+				/*right: 0;*/
+				width: 5%;
+			}
+			
+			
+			
+			#head {
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			h1 {
+				font-size: 3.5em;
+				display: inline-block;
+				text-align: center;
+			}
+			
+			.property {
+				font-size: 2em;
+				font-weight: 600;
+			}
+			
+			span {
+				
+				font-size: 1em;
+				font-weight: 400;
+			}
+			
+			
+			@media(max-width:700px) {
+				#bit-symbol {
+					width: 4%;
+				}
+			
+				#vtu-symbol {
+					width: 5%;
+				}
+				h1 {
+					font-size: 1.5em;
+				}
+			
+				.property {
+					font-size: 0.5em;
+				}
+			
+				span {
+					font-size: 0.25em;
+				}
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="head">
+			<img id="bit-symbol" src="bit-symbol.png" alt="bit-symbol">
+			<h1>WPMS for COVID-19</h1>
+			<img id="vtu-symbol" src="vtu-symbol.png" alt="vtu-symbol">
+		</div>
+		
+		<div id="data">
+			<p class="property">Name:  <span id="name">%NAME%</span></p> 
+			<p class="property">Temperature: <span id="temp">%TEMP%</span></p>
+			<p class="property">Heart Rate: <span id="hr" >%HR%</span></p>
+			<p class="property">SpO2:  <span id="spo2">%SPO2%</span></p>
+		</div>
+		<script>
+			{
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+					}
+						document.getElementById("name").textContent = this.responseText;
+				};
+				xhttp.open("GET", "/name", true);
+				xhttp.send();
+			}
+
+			setInterval(function ( ) {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						document.getElementById("temp").innerHTML = this.responseText;
+					}
+				};
+				xhttp.open("GET", "/temp", true);
+				xhttp.send();
+			}, 1000 ) ;
+
+			setInterval(function ( ) {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						document.getElementById("hr").innerHTML = this.responseText;
+					}
+				};
+				xhttp.open("GET", "/hr", true);
+				xhttp.send();
+			}, 1000 ) ;
+			
+			setInterval(function ( ) {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						document.getElementById("spo2").innerHTML = this.responseText;
+					}
+				};
+				xhttp.open("GET", "/spo2", true);
+				xhttp.send();
+			}, 1000 ) ;
+		</script>
+	</body>
+</html>
