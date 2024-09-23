@@ -132,40 +132,16 @@ The **Wearable Physiological Monitoring System** operates by continuously monito
 This system is designed for robust and efficient health monitoring, especially in scenarios where traditional infrastructure may not be available. The combination of LoRa, low-power components, and the ClusterDuck Protocol ensures that the device can function in challenging environments with minimal power consumption.
 
 
-## Prototype Design
+## Prototype Demonstration
 
-The wearable system integrates the sensors and microcontroller into a wristband form factor.
-
-### Sensor Placement
-
-The placement of the **MCP9808** and **MAX30102** sensors within the wristband is shown below.
+The wearable physiological monitoring system has been designed to be lightweight and comfortable for long-term usage. The prototype integrates all sensors into a wristband form factor, making it easy to wear during daily activities. The compact size of the ESP32 microcontroller and the attached sensors ensure that the system is unobtrusive and does not hinder the wearer’s movement. The focus of this design is on providing real-time health monitoring in an efficient and user-friendly way.
 
 <p align="center">
-  <img src="https://github.com/shantanu-ghodgaonkar/WPMSCDP/blob/a21fdd2ad9406647542eeebbb47c6fa8daf0ebd3/img/sensor_placement_wrist_band.png" alt="Sensor Placement in Wrist Band" width="400"/>
+  <img src="https://github.com/shantanu-ghodgaonkar/WPMSCDP/blob/a21fdd2ad9406647542eeebbb47c6fa8daf0ebd3/img/prototype_worn_around_wrist.png" alt="Prototype Worn Around Wrist" style="max-width:100%; height:auto;"/>
 </p>
 
 <p align="center">
-  <b>Fig 14:</b> MCP9808 and MAX30102 sensor placement in wrist band.
-</p>
-
-### Prototype Demonstration
-
-Below are images of the prototype in action, worn around the wrist of a subject.
-
-<p align="center">
-  <img src="https://github.com/shantanu-ghodgaonkar/WPMSCDP/blob/a21fdd2ad9406647542eeebbb47c6fa8daf0ebd3/img/prototype_on_wrist_subject.png" alt="Prototype on Subject's Wrist" width="400"/>
-</p>
-
-<p align="center">
-  <b>Fig 15:</b> Prototype of the proposed model placed on the wrist of a subject.
-</p>
-
-<p align="center">
-  <img src="https://github.com/shantanu-ghodgaonkar/WPMSCDP/blob/a21fdd2ad9406647542eeebbb47c6fa8daf0ebd3/img/prototype_worn_around_wrist.png" alt="Prototype Worn Around Wrist" width="400"/>
-</p>
-
-<p align="center">
-  <b>Fig 16:</b> Prototype worn around wrist.
+  <b>Fig 5:</b> Prototype worn around wrist.
 </p>
 
 ## Conclusion
